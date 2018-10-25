@@ -10,13 +10,13 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-//lol
+//xd
 
 public class App extends Application {
 
     @Override
     public void start(Stage primaryStage){
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Losowanko");
         primaryStage.setResizable(false);
         GridPane root=new GridPane();
         root.setHgap(20);
@@ -39,8 +39,8 @@ public class App extends Application {
         losuj.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
                 Losowanko losowanko=new Losowanko();
-                String wynik;
-                wynik=losowanko.wylosuj();
+                String wynik = losowanko.wylosuj();
+                System.out.println(wynik);
                 int[] parse=new int[10];
                 Label[] tf=new Label[10];
                 Label[] role=new Label[10];
