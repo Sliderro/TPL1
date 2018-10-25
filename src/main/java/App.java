@@ -10,7 +10,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-//komentarz
 
 public class App extends Application {
 
@@ -75,7 +74,6 @@ public class App extends Application {
                 alertGrid.setMaxWidth(Double.MAX_VALUE);
                 alert.getDialogPane().setContent(alertGrid);
                 alert.showAndWait();
-                System.out.println(wynik);
             }
         });
         primaryStage.setScene(new Scene(root, 600, 400));
